@@ -1,5 +1,3 @@
-
-   
 import itertools
 import streamlit as st
 import ui
