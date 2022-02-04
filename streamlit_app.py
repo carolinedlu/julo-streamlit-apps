@@ -113,7 +113,7 @@ def navbar():
     )
 
 st.image("https://streamlit.io/images/brand/streamlit-mark-color.png", width=100)
-st.title("Streamlit Cloud Example Apps")
+st.title("JULO's Streamlit Apps")
 st.write(
     "🚀 To deploy an app with your own [Streamlit Cloud](https://share.streamlit.io/) account,"
     " click 'View App Repo'"
