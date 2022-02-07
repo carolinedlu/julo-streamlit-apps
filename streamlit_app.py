@@ -184,7 +184,7 @@ def app(name, description, image, link, repo_name):
     st.write("[👀 View App Repo](%s)" % repo_link)
     st.write("")
 
-category("📊 Data Visualization") #TODO: Add your own category labels if you like
+category("📊 Data Visualization")
 col1, col2, col3 = st.columns(3)
 with col1:
     app(
@@ -194,6 +194,13 @@ with col1:
         "https://share.streamlit.io/streamlit/demo-uber-nyc-pickups/main",
         "demo-uber-nyc-pickups",
     )
+    app(
+        "Annotations",
+        "Give more context to your time series data using annotations.",
+        "images/Annotations.png",
+        "https://share.streamlit.io/streamlit/example-app-time-series-annotation/main",
+        "example-app-time-series-annotation",
+    )
 with col2:
     app(
         "Data Wrangler",
@@ -201,7 +208,13 @@ with col2:
         "images/CSVWrangler.png",
         "https://share.streamlit.io/streamlit/example-app-csv-wrangler/main/app.py",
         "example-app-csv-wrangler",
-
+    )
+    app(
+        "Interactive Tables",
+        "Create interactive tables with the streamlit-aggrid component.",
+        "images/InteractiveTables.png",
+        "https://share.streamlit.io/streamlit/example-app-interactive-table/main",
+        "example-app-interactive-table",
     )
 with col3:
     app(
@@ -211,39 +224,81 @@ with col3:
         "https://share.streamlit.io/streamlit/example-app-crypto-dashboard/main/app.py",
         "example-app-crypto-dashboard",
     )
+    app(
+        "Job Monitoring",
+        "Monitor the performance of your data jobs.",
+        "images/MonitoringDashboard.png",
+        "https://share.streamlit.io/streamlit/example-app-dbt/main/app.py",
+        "example-app-dbt",
+    )
 
-category("🧠 Machine Learning") #TODO: Add your own category labels if you like
+category("🧠 Machine Learning")
 col1, col2, col3 = st.columns(3)
 with col1:
     app(
-        "Model Debugger", #TODO: Add your app title, description, path to image, Streamlit link, and hyphenated repo name
+        "Model Debugger",
         "Visualize your model to debug the output. This app uses Tensorflow and GAN to generate photorealistic images.",
         "images/FaceGAN.png",
         "https://share.streamlit.io/streamlit/demo-face-gan/",
         "demo-face-gan",
     )
+    app(
+        "Keyword Extraction",
+        "Leverage NLP embeddings to create key phrases that are most similar to a document.",
+        "images/KeywordExtractor.png",
+        "https://share.streamlit.io/streamlit/example-app-bert-keyword-extractor/main/app.py",
+        "example-app-bert-keyword-extractor",
+    )
+    app(
+        "Speech to Text",
+        "A speech-to-text transcription app. Upload a .wav file, transcribe it, download it!",
+        "images/SpeechToText.png",
+        "https://share.streamlit.io/streamlit/example-app-speech-to-text-transcription/main",
+        "example-app-speech-to-text-transcription",
+    )
 with col2:
     app(
-        "ML Tools", #TODO: Add your app title, description, path to image, Streamlit link, and hyphenated repo name
+        "ML Tools",
         "Create machine learning tools for others to use your models. This app generates images using the Deep Dream technique.",
         "images/DeepDream.png",
         "https://share.streamlit.io/streamlit/demo-deepdream/master",
         "demo-deepdream",
     )
+    app(
+        "Document Anonymizer",
+        "Detect entities (persons, orgs, and locations) present in a document and anonymize them in one click.",
+        "images/DocumentAnonymizer.png",
+        "https://share.streamlit.io/charlywargnier/streamlit-text-anonymizer/main/app.py",
+        "streamlit-text-anonymizer",
+    )
+    app(
+        "FAQ Generation",
+        "An FAQ generator that generates quality question/answer pairs from URLs.",
+        "images/FAQGeneration.png",
+        "https://share.streamlit.io/streamlit/example-app-qa-generator/main",
+        "example-app-qa-generator",
+    )
 with col3:
     app(
-        "Data Browser", #TODO: Add your app title, description, path to image, Streamlit link, and hyphenated repo name
+        "Data Browser",
         "Explore large datasets for input into ML models. This app displays self-driving car data and does real-time detection using YOLO.",
         "images/SelfDriving.png",
         "https://share.streamlit.io/streamlit/demo-self-driving/master",
         "demo-self-driving",
     )
+    app(
+        "Sentiment Analysis",
+        "A text analysis dashboard. Type in a term to view the corresponding Twitter sentiment",
+        "images/SentimentAnalysis.png",
+        "https://share.streamlit.io/streamlit/example-app-twitter-analyzer/main",
+        "example-app-twitter-analyzer",
+    )
 
-category("📦 Product") #TODO: Add your own category labels if you like
+category("📦 Product")
 col1, col2, col3 = st.columns(3)
 with col1:
     app(
-        "Info Sharing", #TODO: Add your app title, description, path to image, Streamlit link, and hyphenated repo name
+        "Info Sharing",
         "Share data or information with others. This app pulls Streamlit's roadmap via the Notion API.",
         "images/Roadmap.png",
         "https://share.streamlit.io/streamlit/roadmap",
@@ -251,26 +306,33 @@ with col1:
     )
 with col2:
     app(
-        "A/B Testing", #TODO: Add your app title, description, path to image, Streamlit link, and hyphenated repo name
+        "A/B Testing",
         "Upload your experiment results to explore the statistical significance of an A/B test.",
         "images/ABTesting.png",
         "https://share.streamlit.io/streamlit/example-app-ab-testing/main",
         "example-app-ab-testing",
     )
     
-category("🦄 Other") #TODO: Add your own category labels if you like
+category("🦄 Other")
 col1, col2, col3 = st.columns(3)
 with col1:
     app(
-        "Databases", #TODO: Add your app title, description, path to image, Streamlit link, and hyphenated repo name
+        "Databases",
         "Easily collect data from users and write to a database.",
         "images/BugReport.png",
         "https://share.streamlit.io/streamlit/example-app-bug-report/main",
         "example-app-bug-report",
     )
+    app(
+        "File Format Conversion",
+        "Convert file formats.",
+        "images/FileConverter.png",
+        "https://share.streamlit.io/streamlit/example-app-file-converter/main",
+        "example-app-file-converter",
+        )
 with col2:
     app(
-        "File Generation", #TODO: Add your app title, description, path to image, Streamlit link, and hyphenated repo name
+        "File Generation",
         "Quickly generate a PDF file using data collected from user input.",
         "images/PDFGenerator.png",
         "https://share.streamlit.io/streamlit/example-app-pdf-report/main",
@@ -278,7 +340,7 @@ with col2:
     )
 with col3:
     app(
-        "Collaboration", #TODO: Add your app title, description, path to image, Streamlit link, and hyphenated repo name
+        "Collaboration",
         "Allow viewers of your app to collaborate via a commenting feature.",
         "images/Comments.png",
         "https://share.streamlit.io/streamlit/example-app-commenting/main",
